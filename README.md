@@ -13,12 +13,12 @@
 ### Core Development Team
 1. **SelvaVignesh S** - Backend Developer / Lead Engineering / AKCL
 2. **Niteesh Kumar G K** - Full Stack Developer / AKCL
-3. **Gobinath A** - Frontend Developer
-4. **Vasugi S** - Frontend Developer
-5. **Deepak R** - Backend Developer
-6. **Kamalesh K** - Frontend Developer
-7. **Kavitha P** - UI/UX Developer
-8. **Aswin Balaji R** - Backend Developer
+3. **Gobinath A** - Full Stack Developer Trainee 
+4. **Vasugi S** - Full Stack Developer Trainee
+5. **Deepak R** - Full Stack Developer Trainee 
+6. **Kamalesh K** - Full Stack Developer Trainee 
+7. **Kavitha P** - Full Stack Developer Trainee
+8. **Aswin Balaji R** -Full Stack Developer Trainee
 
 ### Specialized Roles
 9. **Keerthana E** - DevOps Engineer
