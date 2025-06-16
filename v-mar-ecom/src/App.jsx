@@ -4,14 +4,10 @@ import Nav from './Componets/Nav'
 import './App.css'
 
 function App() {
-  
-
-  return (
-    <>
+   return (
+      <>
      <Nav />
-     
-    
-    </>
+      </>
   )
 }
 
