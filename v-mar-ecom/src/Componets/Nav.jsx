@@ -1,11 +1,21 @@
 import React from 'react'
+import { FaPhone } from 'react-icons/fa';
+
+import './Nav.css';
 
 const Nav = () => {
   return (
-    <div>
-      
+    <div className="top-bar">
+      <div className="top-bar-left">
+        <FaPhone className="phone-icon" />
+        <span>+1 (555) 123-4567</span>
+        <span className="divider">Free delivery on orders over $50</span>
+      </div>
+      <div className="top-bar-right">
+        Mon–Sat: 8AM–8PM | Sun: 9AM–6PM
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;
