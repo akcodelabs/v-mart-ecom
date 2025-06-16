@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaPhone } from 'react-icons/fa';
+import { FiPhone } from "react-icons/fi";
 
 import './Nav.css';
 
@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div className="top-bar">
       <div className="top-bar-left">
-        <FaPhone className="phone-icon" />
+      <FiPhone />
         <span>+1 (555) 123-4567</span>
         <span className="divider">Free delivery on orders over $50</span>
       </div>
