@@ -1,15 +1,15 @@
 import { useState } from 'react'
 
 import './App.css'
-import UserLogin from './components/User'
+import Hero from './Componets/Hero'
 
 function App() {
   
 
   return (
-    <div>
-      <UserLogin />
-    </div>
+    <>
+      <Hero/>
+    </>
   )
 }
 
