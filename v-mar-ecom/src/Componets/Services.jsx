@@ -1,7 +1,6 @@
 import React from 'react';
 import './Services.css';
 import { FaTruck, FaClock, FaShieldAlt, FaHeadphones } from 'react-icons/fa';
-
 const Services = () => {
   return (
     <section className="services-section">
@@ -40,5 +39,4 @@ const Services = () => {
     </section>
   );
 };
-
 export default Services;
