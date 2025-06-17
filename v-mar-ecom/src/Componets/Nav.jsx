@@ -1,6 +1,6 @@
 import React from 'react'
 import { FiPhone } from "react-icons/fi";
-import './Nav.css';
+import './nav.css';
 
 const Nav = () => {
   return (
