@@ -1,13 +1,13 @@
 import { useState } from 'react'
-
-import './App.css'
+import Services from './Componets/Services'
+import './App.css'                    
 
 function App() {
   
 
   return (
     <>
-     
+    <Services />
     </>
   )
 }
