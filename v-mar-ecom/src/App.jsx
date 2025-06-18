@@ -1,14 +1,15 @@
 import { useState } from 'react'
 
 import './App.css'
-import UserLogin from './components/User'
+
+import Newsletter from './Componets/Newsletter'
 
 function App() {
   
 
   return (
     <div>
-      <UserLogin />
+      <Newsletter/>
     </div>
   )
 }
