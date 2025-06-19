@@ -4,10 +4,12 @@ import Newsletter from "./Componets/Newsletter";
 import UserLogin from "./components/User";
 import Fotter from "./Componets/Fotter";
 import ProductCardList from "./Componets/Products";
+import Hero from "./Componets/Hero";
 
 function App() {
   return (
     <div className="App">
+      <Hero />
       <AboutPage />
       <ProductCardList />
       <Newsletter />
