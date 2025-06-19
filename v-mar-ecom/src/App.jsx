@@ -8,6 +8,7 @@ import Nav from "./components/Nav";
 import ContentSection from "./components/ContentSection";
 import Services from "./components/Services";
 import ServicesExtension from "./components/ServicesExtension";
+import Footer from "./Componets/User/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <ServicesExtension />
       <Newsletter />
       <Fotter />
+      <Footer />
     </div>
   );
 }
