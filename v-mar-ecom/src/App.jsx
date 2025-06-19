@@ -6,6 +6,7 @@ import Fotter from "./Componets/Fotter";
 import ProductCardList from "./Componets/Products";
 import Hero from "./Componets/Hero";
 import Nav from "./Componets/Nav";
+import Services from "./Componets/Services";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <AboutPage />
       <ProductCardList />
+      <Services />
       <Newsletter />
       <Fotter />
     </div>
