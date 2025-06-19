@@ -8,6 +8,7 @@ import Hero from "./Componets/Hero";
 import Nav from "./Componets/Nav";
 import ContentSection from "./Componets/ContentSection";
 import Services from "./Componets/Services";
+import ServicesExtension from "./Componets/ServicesExtension";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ProductCardList />
       <ContentSection />
       <Services />
+      <ServicesExtension />
       <Newsletter />
       <Fotter />
     </div>
