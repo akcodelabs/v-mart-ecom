@@ -8,10 +8,12 @@ import Nav from "./Componets/Nav";
 import ContentSection from "./Componets/ContentSection";
 import Services from "./Componets/Services";
 import ServicesExtension from "./Componets/ServicesExtension";
-
+import { User } from "lucide-react";
+import UserHeader from "./Componets/UserHeadder";
 function App() {
   return (
     <div className="App">
+      <UserHeader/>
       <Nav />
       <Hero />
       <AboutPage />
@@ -21,6 +23,7 @@ function App() {
       <ServicesExtension />
       <Newsletter />
       <Fotter />
+      
     </div>
   );
 }
