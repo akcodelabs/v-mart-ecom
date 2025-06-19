@@ -1,13 +1,13 @@
 import "./App.css";
-import AboutPage from "./Componets/AboutPage";
-import Newsletter from "./Componets/Newsletter";
-import Fotter from "./Componets/Fotter";
-import ProductCardList from "./Componets/Products";
-import Hero from "./Componets/Hero";
-import Nav from "./Componets/Nav";
-import ContentSection from "./Componets/ContentSection";
-import Services from "./Componets/Services";
-import ServicesExtension from "./Componets/ServicesExtension";
+import AboutPage from "./components/AboutPage";
+import Newsletter from "./components/Newsletter";
+import Fotter from "./components/Fotter";
+import ProductCardList from "./components/Products";
+import Hero from "./components/Hero";
+import Nav from "./components/Nav";
+import ContentSection from "./components/ContentSection";
+import Services from "./components/Services";
+import ServicesExtension from "./components/ServicesExtension";
 
 function App() {
   return (
