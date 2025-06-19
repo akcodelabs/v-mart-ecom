@@ -6,6 +6,7 @@ import Fotter from "./Componets/Fotter";
 import ProductCardList from "./Componets/Products";
 import Hero from "./Componets/Hero";
 import Nav from "./Componets/Nav";
+import ContentSection from "./Componets/ContentSection";
 import Services from "./Componets/Services";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <AboutPage />
       <ProductCardList />
+      <ContentSection />
       <Services />
       <Newsletter />
       <Fotter />
