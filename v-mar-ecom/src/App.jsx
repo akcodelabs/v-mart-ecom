@@ -1,14 +1,14 @@
 import { useState } from 'react'
 
 import './App.css'
-import UserLogin from './components/User'
+import ContactForm from './Componets/ContactForm'
 
 function App() {
   
 
   return (
     <div>
-      <UserLogin />
+      <ContactForm/>
     </div>
   )
 }
