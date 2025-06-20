@@ -12,6 +12,7 @@ import BestSeller from "../components/BestSeller";
 import UserHeader from "../components/user/UserHeadder";
 import Cart from "../components/user/Cart";
 import Footer from "../components/user/Footer";
+import ContactForm from "../components/ContactForm";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <ServicesExtension />
       <Cart />
       <Newsletter />
+      <ContactForm />
       <Fotter />
       <Footer />
     </>
