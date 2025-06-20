@@ -1,7 +1,6 @@
 import React from "react";
 import "./AboutPage.css";
-import { FaEye } from "react-icons/fa";
-import { IoIosCart } from "react-icons/io";
+import { Eye, ShoppingCart } from "lucide-react"; // replaced icons
 
 const AboutPage = () => {
   return (
@@ -50,11 +49,11 @@ const AboutPage = () => {
       {/* Floating Buttons */}
       <div className="floating-buttons">
         <button className="btn demo">
-          <FaEye size={28} />
+          <Eye size={28} />
           Demos
         </button>
         <button className="btn buy">
-          <IoIosCart size={30} />
+          <ShoppingCart size={30} />
           Buy Now
         </button>
       </div>
