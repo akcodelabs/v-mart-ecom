@@ -1,3 +1,6 @@
+*{
+  font-family: "poppins", sans-serif;
+}
 .hero-container {
   display: flex;
   justify-content: space-between;
@@ -60,10 +63,10 @@
 }
 
 .learn {
-  background-color: white;
+  background-color: rgb(187, 183, 183);
   color: black;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 8px 16px;
   border: 1px solid white;
   font-weight: bold;
@@ -71,7 +74,7 @@
 
 .image-section {
   flex: 1;
-  max-width: 400px;
+  max-width: 500px;
   position: relative;
   margin-top: 20px;
 }
