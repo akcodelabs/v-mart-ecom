@@ -8,19 +8,12 @@ import Nav from "./components/Nav";
 import ContentSection from "./components/ContentSection";
 import Services from "./components/Services";
 import ServicesExtension from "./components/ServicesExtension";
+import Login from "./Components/user/Login";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Hero />
-      <AboutPage />
-      <ProductCardList />
-      <ContentSection />
-      <Services />
-      <ServicesExtension />
-      <Newsletter />
-      <Fotter />
+      <Login/>
     </div>
   );
 }
