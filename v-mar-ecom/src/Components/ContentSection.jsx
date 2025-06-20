@@ -25,9 +25,9 @@ const HeroSection = () => {
 
       <div className={styles.imageSection}>
         <img
-          src="https://hips.hearstapps.com/del.h-cdn.co/assets/16/38/1600x800/landscape-1474645974-cakes-group-193.jpg?resize=640:*"
+          src="https://cdn.britannica.com/17/196817-050-6A15DAC3/vegetables.jpg"
           alt="Birthday Cake"
-          className={styles.heroImage}
+          className="hero-image"
         />
 
         <div className={styles.ratingCard}>
