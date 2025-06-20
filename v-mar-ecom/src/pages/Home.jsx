@@ -8,6 +8,7 @@ import Nav from "../components/Nav";
 import ContentSection from "../components/ContentSection";
 import Services from "../components/Services";
 import ServicesExtension from "../Components/ServicesExtension";
+import BestSeller from "../components/BestSeller";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <ProductCardList />
       <AboutPage />
       <Services />
+      <BestSeller />
       <ServicesExtension />
       <Newsletter />
       <Fotter />
