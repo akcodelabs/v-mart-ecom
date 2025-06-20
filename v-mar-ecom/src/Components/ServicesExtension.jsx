@@ -1,7 +1,7 @@
 import React from "react";
-import "./Services.css"; // We'll create this next
+import "./ServicesExtension.css"; // We'll create this next
 
-const Services = () => {
+const ServicesExtension = () => {
   return (
     <section className="services-section">
       <h1 className="title">Why Choose V-Mart?</h1>
@@ -10,7 +10,7 @@ const Services = () => {
         service
       </p>
 
-      <div className="services-grid">
+      <div className="services-flex">
         <div className="service-card">
           <div className="icon">🚚</div>
           <h3>Fast Delivery</h3>
@@ -42,4 +42,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default ServicesExtension;
