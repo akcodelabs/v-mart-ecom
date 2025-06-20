@@ -10,6 +10,7 @@ import Services from "../components/Services";
 import ServicesExtension from "../Components/ServicesExtension";
 import BestSeller from "../components/BestSeller";
 import UserHeader from "../components/user/UserHeadder";
+import Cart from "../components/user/Cart";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Services />
       <BestSeller />
       <ServicesExtension />
+      <Cart />
       <Newsletter />
       <Fotter />
     </>
