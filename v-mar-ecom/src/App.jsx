@@ -14,9 +14,9 @@ function App() {
     <div className="App">
       <Nav />
       <Hero />
-      <AboutPage />
-      <ProductCardList />
       <ContentSection />
+      <ProductCardList />
+      <AboutPage />
       <Services />
       <ServicesExtension />
       <Newsletter />
