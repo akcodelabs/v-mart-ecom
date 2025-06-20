@@ -21,12 +21,12 @@ const Home = () => {
       <Hero />
       <UserHeader />
       <ContentSection />
-      <ProductCardList />
-      <AboutPage />
       <Services />
       <BestSeller />
       <ServicesExtension />
       <Cart />
+      <ProductCardList />
+      <AboutPage />
       <Newsletter />
       <ContactForm />
       <Fotter />

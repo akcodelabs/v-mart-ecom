@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import { FaShoppingCart, FaSearch } from "react-icons/fa";
+import { ShoppingCart, Search } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -14,12 +14,12 @@ const Hero = () => {
       </div>
 
       <div className="search-section">
-        <FaSearch className="search-icon" />
+        <Search className="search-icon" size={18} />
         <input type="text" placeholder="Search vegetables..." />
       </div>
 
       <div className="cart-section">
-        <FaShoppingCart />
+        <ShoppingCart size={20} />
         <span>Cart (0)</span>
       </div>
     </div>

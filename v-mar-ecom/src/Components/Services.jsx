@@ -1,6 +1,6 @@
 import React from "react";
 import "./Services.css";
-import { FaTruck, FaClock, FaShieldAlt, FaHeadphones } from "react-icons/fa";
+import { Truck, Clock, ShieldCheck, Headphones } from "lucide-react"; // updated icons
 
 const Services = () => {
   return (
@@ -12,7 +12,7 @@ const Services = () => {
       <div className="services-container">
         <div className="service-card">
           <div className="icon-wrapper blue">
-            <FaTruck />
+            <Truck size={24} />
           </div>
           <h3>Free Delivery</h3>
           <p>
@@ -22,7 +22,7 @@ const Services = () => {
         </div>
         <div className="service-card">
           <div className="icon-wrapper green">
-            <FaClock />
+            <Clock size={24} />
           </div>
           <h3>Same Day Delivery</h3>
           <p>
@@ -31,7 +31,7 @@ const Services = () => {
         </div>
         <div className="service-card">
           <div className="icon-wrapper purple">
-            <FaShieldAlt />
+            <ShieldCheck size={24} />
           </div>
           <h3>Quality Guarantee</h3>
           <p>
@@ -41,7 +41,7 @@ const Services = () => {
         </div>
         <div className="service-card">
           <div className="icon-wrapper orange">
-            <FaHeadphones />
+            <Headphones size={24} />
           </div>
           <h3>24/7 Support</h3>
           <p>
@@ -53,4 +53,5 @@ const Services = () => {
     </section>
   );
 };
+
 export default Services;
