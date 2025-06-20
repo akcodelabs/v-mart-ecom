@@ -4,7 +4,6 @@ import { Search } from 'lucide-react';
 import { Heart } from 'lucide-react';
 import { UserRound } from 'lucide-react';
 import { ShoppingBag } from 'lucide-react';
-import  Leaf from '../assets/Leaf.png';
 
 const UserHeadder = () => {
   return (
@@ -13,7 +12,7 @@ const UserHeadder = () => {
       
       <header className="header">
         <div className="header__logo">
-          <span className="logo-leaf"><img src={Leaf} alt ="Leaf"  width={80} height={80}/></span>
+          <span className="logo-icon">V</span>
           <span className="logo-text">ORGANIC <p>FOOD</p></span>
         </div>
         

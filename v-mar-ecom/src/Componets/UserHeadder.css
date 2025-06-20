@@ -28,10 +28,16 @@
   font-weight: bold;
 }
 
-.logo-leaf {
-  font-size: 1.5rem;
-  margin-right: 8px;
-}
+.logo-icon{
+          background-color: #4caf50;
+          color: white;
+          font-weight: bold;
+          padding: 0.1px 15px 0.1px 15px;
+          margin-right: 8px;
+          border-radius: 4px;
+          font-size: 50px;
+        }
+        
 .logo-text{
   display: flex;
   flex-direction: column;
