@@ -8,7 +8,7 @@ import Nav from "./components/Nav";
 import ContentSection from "./components/ContentSection";
 import Services from "./components/Services";
 import ServicesExtension from "./components/ServicesExtension";
-import Footer from "./Componets/User/Footer";
+import Footer from "./Components/User/Footer";
 
 function App() {
   return (
