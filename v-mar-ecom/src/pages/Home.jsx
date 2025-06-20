@@ -9,12 +9,14 @@ import ContentSection from "../components/ContentSection";
 import Services from "../components/Services";
 import ServicesExtension from "../Components/ServicesExtension";
 import BestSeller from "../components/BestSeller";
+import UserHeader from "../components/user/UserHeadder";
 
 const Home = () => {
   return (
     <>
       <Nav />
       <Hero />
+      <UserHeader />
       <ContentSection />
       <ProductCardList />
       <AboutPage />

@@ -91,7 +91,7 @@ const getcardStyles =(isMobile)=>( {
   
   button: {
     position:"absolute",
-    bottom:"1rem",
+    bottom:"0.5rem",
     right:"1rem",
     marginTop: "0.5rem",
     padding: isMobile ? "0.4rem 0.8rem" : "0.5rem 1rem",
