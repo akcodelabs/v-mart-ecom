@@ -1,69 +1,27 @@
-*{
-  margin: 0;
-}
 .top-bar {
-  background-color: #28a745;
-  padding: au; 
+  background-color: #28a745; /* Green background */
   color: white;
-  padding: 6px 60px; 
+  padding: 8px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
-  flex-wrap: nowrap;
   width: 100%;
   box-sizing: border-box;
-  
 }
 
-.top-bar-left {
+.left-info {
   display: flex;
   align-items: center;
-  gap: 5px;
-  flex-shrink: 1;
+  gap: 12px;
 }
 
-.phone-icon {
-  font-size: 14px;
-  margin-right: 6px;
-}
 
-.divider {
+.delivery-text {
   margin-left: 10px;
 }
 
-.top-bar-right {
+.right-info {
   white-space: nowrap;
-  font-size: 14px;
-  flex-shrink: 0;
-  margin-left: auto;
-}
-@media (max-width: 768px) {
-  .top-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 12px 20px;
-    gap: 8px;
-  }
-
-  .top-bar-left, 
-  .top-bar-right {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    font-size: 13px;
-    justify-content: flex-start;
-  }
-
-  .top-bar-right {
-    margin-left: 0;
-    white-space: normal;
-  }
-
-  .divider {
-    display: block;
-    margin-left: 0;
-    margin-top: 4px;
-  }
 }

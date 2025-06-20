@@ -1,65 +1,64 @@
-.top-bar {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 40px;
+  padding: 12px 60px;
   background-color: white;
-  border-bottom: 1px solid #e7dddd;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.logo-section {
+.logo {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.logo-box {
-  background-color: #19732e;
+.logo-icon {
+  background-color: #28a745;
   color: white;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 20px;
   padding: 10px 14px;
   border-radius: 8px;
 }
 
-.logo-text strong {
+.logo h2 {
+  margin: 0;
   color: #28a745;
-  font-size: 1.2rem;
 }
 
-.logo-text span {
-  display: block;
-  font-size: 0.85rem;
+.logo span {
+  font-size: 13px;
   color: #6c757d;
 }
 
-.search-section {
+.search-bar {
   display: flex;
   align-items: center;
-  border: 1px solid #ddd;
+  background-color: #f8f9fa;
   padding: 8px 12px;
   border-radius: 8px;
-  width: 400px;
-  color: #6c757d;
+  border: 1px solid #dee2e6;
+  width: 40%;
 }
 
-.search-section input {
+.search-bar input {
   border: none;
   outline: none;
-  margin-left: 8px;
+  background: transparent;
+  margin-left: 10px;
   width: 100%;
-  font-size: 0.95rem;
+  font-size: 14px;
 }
 
-.cart-section {
+.cart {
   display: flex;
   align-items: center;
-  border: 1px solid #ddd;
-  padding: 8px 16px;
-  border-radius: 8px;
-  cursor: pointer;
   gap: 8px;
+  background-color: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
   font-weight: 500;
   color: #212529;
 }
