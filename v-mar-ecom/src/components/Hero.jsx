@@ -1,5 +1,7 @@
 import React from 'react';
-import { FaShoppingCart, FaSearch } from 'react-icons/fa';
+import { Search } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
+
 import './Hero.css';
 
 const Header = () => {
@@ -16,13 +18,13 @@ const Header = () => {
 
       {/* Search Bar */}
       <div className="search-bar">
-        <FaSearch className="search-icon" />
+        <Search className="search-icon" />
         <input type="text" placeholder="Search vegetables..." />
       </div>
 
       {/* Cart */}
       <div className="cart">
-        <FaShoppingCart className="cart-icon" />
+        <ShoppingCart className="cart-icon" />
         <span>Cart (0)</span>
       </div>
     </div>

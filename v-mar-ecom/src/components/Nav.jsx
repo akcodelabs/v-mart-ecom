@@ -1,12 +1,12 @@
 import React from 'react';
-import { BsTelephone } from "react-icons/bs";
+import { Phone } from 'lucide-react';
 import './Nav.css';
 
 const TopBar = () => {
   return (
     <div className="top-bar">
       <div className="left-info">
-        <BsTelephone className="phone-icon" />
+        <Phone className="phone-icon" />
         <span>+1 (555) 123-4567</span>
         <span className="delivery-text">Free delivery on orders over $50</span>
       </div>
