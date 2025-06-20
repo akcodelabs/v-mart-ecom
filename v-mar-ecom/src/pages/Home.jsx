@@ -7,7 +7,7 @@ import Hero from "../components/Hero";
 import Nav from "../components/Nav";
 import ContentSection from "../components/ContentSection";
 import Services from "../components/Services";
-import ServicesExtension from "../components/ServicesExtension";
+import ServicesExtension from "../Components/ServicesExtension";
 
 const Home = () => {
   return (
