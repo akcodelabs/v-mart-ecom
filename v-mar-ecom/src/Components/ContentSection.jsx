@@ -27,7 +27,7 @@ const HeroSection = () => {
         <img
           src="https://cdn.britannica.com/17/196817-050-6A15DAC3/vegetables.jpg"
           alt="Birthday Cake"
-          className="hero-image"
+          className={styles.heroImage}
         />
 
         <div className={styles.ratingCard}>
