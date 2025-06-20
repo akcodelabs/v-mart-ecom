@@ -11,6 +11,7 @@ import ServicesExtension from "../Components/ServicesExtension";
 import BestSeller from "../components/BestSeller";
 import UserHeader from "../components/user/UserHeadder";
 import Cart from "../components/user/Cart";
+import Footer from "../components/user/Footer";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
       <Cart />
       <Newsletter />
       <Fotter />
+      <Footer />
     </>
   );
 };
