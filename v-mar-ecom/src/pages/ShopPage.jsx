@@ -1,22 +1,18 @@
 import React, { useState ,useEffect} from "react";
 import styles from "./ShopPage.module.css"; // Assuming you have a CSS module for styles
-import { ChevronsRight} from 'lucide-react';
-import { ChevronsLeft } from 'lucide-react';
-import { Heart } from 'lucide-react';
+import { ChevronsRight,ChevronsLeft,Heart,ShoppingCart,Share2} from 'lucide-react';
 import {products} from "../lib/Products"; // Assuming products.json is in the data folder
 
 const ShopPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [sortOption, setSortOption] = useState("default");
   const [sortedProducts, setSortedProducts] = useState([]);
-  const [heartStates,setHeartStates]=useState([]);
+  const [likedItems, setLikedItems] = useState({});
   
   const productsPerPage = 9; 
   // Initialize sorted products only once
   useEffect(() => {
     setSortedProducts([...products]);
-  
-  setHeartStates(new Array(products.length).fill(false)); // Initialize with false}, []);
 }, []);
   const totalPages = Math.ceil(sortedProducts.length / productsPerPage);
   const indexOfLast = currentPage * productsPerPage;
@@ -36,12 +32,9 @@ const ShopPage = () => {
     setSortedProducts(sorted);
     setCurrentPage(1); // reset to page 1
   };
-  const toggleHeart= (index) => {
-    const newHeartStates=[...heartStates];
-    newHeartStates[indexOfFirst+index]=!newHeartStates[indexOfFirst+index];
-    setHeartStates(newHeartStates);
+  const toggleLike = (id) => {
+    setLikedItems((prev) => ({ ...prev, [id]: !prev[id] }));
   };
-
   const nextPage = () => {
     if (currentPage < totalPages) setCurrentPage(currentPage + 1);
   };
@@ -68,18 +61,28 @@ const ShopPage = () => {
       <div className={styles["product-grid"]}>
         {currentProducts.map((product,index) => (
           <div className={styles["product-card"]} key={product.id}>
-            <div className={styles["wishlist-icon"]}
-            onClick={()=>toggleHeart(index)}>
-              <Heart size={20} strokeWidth={2}
-              color={heartStates[indexOfFirst+index] ? "red":"none"}
-                style={{ transition: "all 0.3s ease" }}
+            <div
+              className={styles["wishlist-icon"]}
+              onClick={() => toggleLike(product.id)}
+              style={{ cursor: "pointer" }}
+            >
+              <Heart
+                size={30}
+                className={
+                  likedItems[product.id]
+                    ? styles.filledHeart
+                    : styles.emptyHeart
+                }
               />
-              </div>
+            </div>
+             <div className={styles.cart}>< ShoppingCart size={32}/></div>
+             <div className={styles.share}>< Share2 size={30}/></div>
+             <div className={styles["image-wrapper"]}>
             <img src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
             <label>{product.description}</label>
             <p>{product.price}</p>
-            <button>Add to Cart</button>
+            <button className={styles["add-to-cart"]}>Buy Now</button></div>
           </div>
         ))}
       </div>

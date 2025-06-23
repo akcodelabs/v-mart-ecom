@@ -7,7 +7,7 @@
   background-color: #fefffe;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 1210px;
+  max-width: 1200px;
   margin:20px auto;
  
 } 
@@ -96,9 +96,9 @@
   z-index: 1000;
 }
 
-.floating-buttons .btn {
+ .btn {
   border: none;
-  padding: 10px 12px;
+  padding: 10px 12px !important;
   color: white;
   font-size: 14px;
   font-weight: bold;
@@ -109,14 +109,15 @@
   align-items: center;
   flex-direction: column;
   gap: 5px;
+  text-align: center;
 }
 
-.floating-buttons .demo {
-  background-color: #ff0076;text-align: center;
+ .demo {
+  background-color: #ff0076 !important;
 }
 
-.floating-buttons .buy {
-  background-color: #5a3cf2;
+.buy {
+  background-color: #5a3cf2 !important;
 }
 
 .floating-buttons .icon {
