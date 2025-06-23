@@ -70,3 +70,9 @@ body {
     text-align: center;
     margin-left: 137px;
 }
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
