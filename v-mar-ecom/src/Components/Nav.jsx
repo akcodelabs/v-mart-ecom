@@ -1,20 +1,20 @@
 import React from 'react';
 import { Phone } from 'lucide-react';
-import './Nav.css';
+import styles from './Nav.module.css';
 
-const TopBar = () => {
+const Nav = () => {
   return (
-    <div className="top-bar">
-      <div className="left-info">
-        <Phone className="phone-icon" />
+    <div className={styles["top-bar"]}>
+      <div className={styles["left-info"]}>
+        <Phone className={styles["phone-icon"]} />
         <span>+1 (555) 123-4567</span>
-        <span className="delivery-text">Free delivery on orders over $50</span>
+        <span className={styles["delivery-text"]}>Free delivery on orders over $50</span>
       </div>
-      <div className="right-info">
+      <div className={styles["right-info"]}>
         <span>Mon-Sat: 8AM-8PM | Sun: 9AM-6PM</span>
       </div>
     </div>
   );
 };
 
-export default TopBar;
+export default Nav;
