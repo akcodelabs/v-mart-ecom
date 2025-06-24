@@ -1,15 +1,15 @@
 import { useState } from 'react'
 
 import './App.css'
-import UserLogin from './components/User'
+import Fav from './Componets/Fav'
 
 function App() {
   
 
   return (
-    <div>
-      <UserLogin />
-    </div>
+    <>
+      <Fav />
+    </>
   )
 }
 
