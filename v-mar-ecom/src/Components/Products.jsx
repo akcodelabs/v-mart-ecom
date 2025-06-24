@@ -1,6 +1,61 @@
 import React, { useEffect, useState } from "react";
-import ProductCard from "./Card";
 
+// Sample ProductCard component (inline)
+const ProductCard = ({
+  name,
+  description,
+  image,
+  price,
+  rating,
+  actualPrice,
+  review,
+  label,
+}) => {
+  return (
+    <div
+      style={{
+        width: "250px",
+        border: "1px solid #ccc",
+        borderRadius: "12px",
+        padding: "1rem",
+        textAlign: "center",
+        boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+      }}
+    >
+      <img
+        src={image}
+        alt={name}
+        style={{
+          width: "100%",
+          height: "150px",
+          objectFit: "cover",
+          borderRadius: "8px",
+        }}
+      />
+      <h3>{name}</h3>
+      <p>{description}</p>
+      <p>
+        <strong>₹{price}</strong>{" "}
+        <s style={{ color: "gray" }}>₹{actualPrice}</s>
+      </p>
+      <p>
+        ⭐ {rating} ({review} reviews)
+      </p>
+      <span
+        style={{
+          backgroundColor: "#e0e0e0",
+          borderRadius: "6px",
+          padding: "0.25rem 0.5rem",
+          fontSize: "0.8rem",
+        }}
+      >
+        {label}
+      </span>
+    </div>
+  );
+};
+
+// Responsive list style
 const getlistStyle = (isMobile) => ({
   display: "flex",
   flexDirection: isMobile ? "column" : "row",
@@ -13,10 +68,11 @@ const getlistStyle = (isMobile) => ({
   flexShrink: 0,
 });
 
+// Product data
 const products = [
   {
     name: "Fruits",
-    description: "Farm fresh,organically grown",
+    description: "Farm fresh, organically grown",
     image:
       "https://img.freepik.com/free-photo/mixed-fruits-with-apple-banana-orange-other_74190-938.jpg",
     price: 1.99,
@@ -27,7 +83,7 @@ const products = [
   },
   {
     name: "Vegetables",
-    description: "Farm fresh,organically grown",
+    description: "Farm fresh, organically grown",
     image:
       "https://img.freepik.com/free-photo/healthy-vegetables-wooden-table_1150-38014.jpg",
     price: 0.99,
@@ -38,7 +94,7 @@ const products = [
   },
   {
     name: "Meat",
-    description: "Farm fresh,organically grown",
+    description: "Farm fresh, organically grown",
     image:
       "https://www.meatemporium.com.au/cdn/shop/products/JA_AME_OurFarmBeefPack_29_1024x1024.jpg?v=1652748098",
     price: 2.49,
@@ -49,7 +105,7 @@ const products = [
   },
   {
     name: "Honey",
-    description: "Farm fresh,organically grown",
+    description: "Farm fresh, organically grown",
     image:
       "https://beeswiki.com/wp-content/uploads/2020/11/Blackberry-Honey-1024x683.jpg",
     price: 1.29,
@@ -60,23 +116,25 @@ const products = [
   },
 ];
 
-const ProductCardList = () => {
-  const [isMobile, setisMobile] = useState(window.innerWidth < 600);
+// Final Products component
+const Products = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
 
   useEffect(() => {
     const handleResize = () => {
-      setisMobile(window.innerWidth < 600);
+      setIsMobile(window.innerWidth < 600);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
   return (
     <div className="App">
       <h1
         style={{
           textAlign: "center",
           color: "#050b1a",
-          fontFamily: "Poppins,san-serif",
+          fontFamily: "Poppins, sans-serif",
           fontWeight: 700,
         }}
       >
@@ -86,11 +144,11 @@ const ProductCardList = () => {
         style={{
           textAlign: "center",
           color: "#8e9399",
-          fontFamily: "Poppins, algeria",
+          fontFamily: "Poppins, sans-serif",
         }}
       >
-        Discover our handpicked selection of freshest vegetables,sourced
-        directly from local farms
+        Discover our handpicked selection of the freshest items sourced directly
+        from local farms.
       </p>
       <div style={getlistStyle(isMobile)}>
         {products.map((product, index) => (
@@ -111,4 +169,4 @@ const ProductCardList = () => {
   );
 };
 
-export default ProductCardList;
+export default Products;
