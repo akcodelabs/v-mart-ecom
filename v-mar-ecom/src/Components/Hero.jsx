@@ -1,29 +1,34 @@
-import React from "react";
-import "./Hero.css";
-import { ShoppingCart, Search } from "lucide-react";
+import React from 'react';
+import { Search } from 'lucide-react';
+import { ShoppingCart } from 'lucide-react';
 
-const Hero = () => {
+import './Hero.css';
+
+const Header = () => {
   return (
-    <div className="top-bar">
-      <div className="logo-section">
-        <div className="logo-box">v</div>
-        <div className="logo-text">
-          <strong>V-Mart</strong>
+    <div className="header">
+      {/* Logo Section */}
+      <div className="logo">
+        <div className="logo-icon">V</div>
+        <div>
+          <h2>V-Mart</h2>
           <span>Fresh Vegetables</span>
         </div>
       </div>
 
-      <div className="search-section">
-        <Search className="search-icon" size={18} />
+      {/* Search Bar */}
+      <div className="search-bar">
+        <Search className="search-icon" />
         <input type="text" placeholder="Search vegetables..." />
       </div>
 
-      <div className="cart-section">
-        <ShoppingCart size={20} />
+      {/* Cart */}
+      <div className="cart">
+        <ShoppingCart className="cart-icon" />
         <span>Cart (0)</span>
       </div>
     </div>
   );
 };
 
-export default Hero;
+export default Header;
