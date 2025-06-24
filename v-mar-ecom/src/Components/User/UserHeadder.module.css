@@ -72,7 +72,7 @@
 .search-button {
   position: absolute;
   right: 6px;
-  top: 45%;
+  top: 25%;
   transform: translateY(-50%);
   background-color: #111111;
   border: none;
