@@ -139,7 +139,7 @@ const Signup = () => {
           <button
             type="submit"
             style={{
-              backgroundColor: "#60b246",
+              backgroundColor: " #45a049",
               color: "white",
               fontWeight: "600",
               border: "none",
