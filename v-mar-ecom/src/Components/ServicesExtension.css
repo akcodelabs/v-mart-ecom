@@ -25,9 +25,8 @@
   margin: 10px 0 40px;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+.services-flex {
+  display: flex;
   gap: 30px;
   justify-content: center;
   align-items: stretch;

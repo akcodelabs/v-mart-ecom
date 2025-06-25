@@ -1,6 +1,6 @@
-import React from 'react';
-import { useForm } from 'react-hook-form';
-import './Login.css';
+import React from "react";
+import { useForm } from "react-hook-form";
+import "./login.css";
 
 // Hardcoded user data
 const users = [
@@ -10,14 +10,14 @@ const users = [
   { phone: "8220876021", email: "user4@kamalesh.com", password: "password4" },
   { phone: "9047718616", email: "user5@anabil.com", password: "password5" },
   { phone: "6369336110", email: "user6@kavitha.com", password: "password6" },
-  { phone: "9944971932", email: "user6@selva.com", password: "password7" }
+  { phone: "9944971932", email: "user6@selva.com", password: "password7" },
 ];
 
 const Login = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors }
+    formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
@@ -25,7 +25,8 @@ const Login = () => {
 
     const userFound = users.find(
       (u) =>
-        (u.email.toLowerCase() === identifier.toLowerCase() || u.phone === identifier) &&
+        (u.email.toLowerCase() === identifier.toLowerCase() ||
+          u.phone === identifier) &&
         u.password === password
     );
 
@@ -39,7 +40,11 @@ const Login = () => {
   const validateIdentifier = (value) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phoneRegex = /^\d{10}$/;
-    return emailRegex.test(value) || phoneRegex.test(value) || "Enter valid email or phone number.";
+    return (
+      emailRegex.test(value) ||
+      phoneRegex.test(value) ||
+      "Enter valid email or phone number."
+    );
   };
 
   return (
@@ -50,22 +55,24 @@ const Login = () => {
         <input
           type="text"
           placeholder="Phone Number or Email"
-          {...register('identifier', {
-            required: 'Phone or Email is required.',
-            validate: validateIdentifier
+          {...register("identifier", {
+            required: "Phone or Email is required.",
+            validate: validateIdentifier,
           })}
         />
-        {errors.identifier && <p className="error">{errors.identifier.message}</p>}
+        {errors.identifier && (
+          <p className="error">{errors.identifier.message}</p>
+        )}
 
         <input
           type="password"
           placeholder="Password (min 8 characters)"
-          {...register('password', {
-            required: 'Password is required.',
+          {...register("password", {
+            required: "Password is required.",
             minLength: {
               value: 8,
-              message: 'Password must be at least 8 characters.'
-            }
+              message: "Password must be at least 8 characters.",
+            },
           })}
         />
         {errors.password && <p className="error">{errors.password.message}</p>}
